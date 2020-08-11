@@ -30,7 +30,9 @@ function createListElement () {
 				
 				})
 
-			};
+			} else {
+			this.getElementsByClassName("deleteButton")[0].remove(); //if finished is not true then remove delete button
+		};
 
 	    }) ;
 

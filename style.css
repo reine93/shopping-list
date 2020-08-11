@@ -1,6 +1,9 @@
-body{
-	background-image: url("https://i.ibb.co/ctDPHgS/background.jpg");
-	background-size: cover;
+body, html
+{
+    width: 100%;
+    height: 100%;
+	background-image: url("background.jpg") 
+	
 }
 
 
@@ -27,13 +30,16 @@ body{
 ul {
 	list-style-type: circle;
 	list-style-position: inside;
+	font-size: 30px;
+
 	
 }
 
 
 li {
-	margin-bottom: 10px
-	font-size: 30px;
+	margin-bottom: 10px;
+	animation: fadeInUp;
+	animation-duration: 1s;
 }
 
 
@@ -53,9 +59,11 @@ li > button {
 
 
 
-.done {
-	color: red;
+   .done {
+	color: green;
 	list-style-type: none;
+	animation: pulse;
+	animation-duration: 1s
 }
 
 .deleteButton {
